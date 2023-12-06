@@ -125,7 +125,7 @@
 .moneyList{
     list-style: none;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
 }
 
 .moneyListItem{
@@ -224,51 +224,91 @@
     font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
-    .app {
-      flex-direction: column;
-    }
-  
-    .main {
-      width: 100%;
-    }
-  
-    .top {
-      height: 30%;
-    }
-  
+@media only screen and (max-width: 600px) {
+
     .timer {
-      left: 50%;
-      transform: translateX(-50%);
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        position: absolute;
+        bottom: 150px;
+        left: 20px;
+        border: 5px solid rgb(246, 246, 246)
     }
-  
-    .bottom {
-      height: 70%;
+
+    .main {
+        width: 100%; 
     }
-  
-    .answer {
-      width: 80%;
-      margin: 0 10%;
-    }
-  
-    .pyramid {
-      width: 100%;
-    }
-  
-    .moneyList {
-      padding: 10px;
-    }
-  
-    .moneyListItem {
-      padding: 3px;
-    }
-  
+
     .start {
-      width: 80%;
+        width: 80%;
     }
-  
-    .welcome {
-      right: 10%;
+
+    .welcome{
+        font-size: 15px;
     }
+    .answers{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    .answer{
+        max-width: 100px;
+        padding: 10px;
+        text-align: center;
+        background: linear-gradient(#0e0124,#22074d);
+        border: 1px solid white;
+        border-radius: 15px;
+        font-size: 20px;
+        font-weight: 300;
+        margin: 0 10px 12px 1px;
+        cursor: pointer;
+        
+    }
+    .trivia{
+        display: flex;
+        gap: 20px;
+    }
+    .pyramid{
+        width: 27%; /* Adjust the width to fit better on smaller screens */
+        max-width: 150px; /* Set a maximum width if needed */
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .moneyList{
+        list-style: none;
+        width: 200px;
+    
+    }
+    
+    .moneyListItem{
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        border: none;
+    
+    }
+
+    .moneyListItemNumber{
+        font-size: 15px;
+        font-weight: 100;
+        width: 30%;
+    
+    }
+    
+    .moneyListItemAmount{
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .endText{
+        font-size: 25px;
+    }
+
+    
   }
-  
